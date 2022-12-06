@@ -1,0 +1,41 @@
+/* 基本設定 */
+* {
+	font-family: "Noto Sans TC", "PingFangTC", 'Microsoft JhengHei';
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+}
+
+/* 卷軸樣式 */
+::-webkit-scrollbar {
+	display: none;
+	// background-color: transparent;
+	// width: 0;
+	// height: 0;
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+::-webkit-scrollbar-thumb {
+	display: none;
+	// background-color: transparent;
+
+	&:hover {
+		background-color: transparent;
+	}
+}

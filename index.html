@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/tabs.css">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- Swiper 套件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<title>市集</title>
+</head>
+<body>
+	<header>
+		<div class="header__title">
+			<h2>盡情擺攤選購寶物吧！</h2> <!-- (讀取下方 data-title) -->
+			<p>你可以在這裡販賣你的商品<br>並買到其他玩家的寶貝！</p> <!-- (讀取下方 data-desc) -->
+		</div>
+
+		<div class="swiper headerSwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(img/banner/bg01.png);">
+					<!-- ！當無上去背圖(破圖)，請依然保留<a></a> -->
+					<a href="#">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg02.png);">
+					<a href="#">
+						<img src="img/banner/cover04.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg03.png);">
+					<a href="#">
+						<img src="img/banner/cover03.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg01.png);">
+					<a href="#">
+						<img src="img/banner/cover01.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg02.png);">
+					<a href="#">
+						<img src="img/banner/cover02.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg03.png);">
+					<a href="#">
+						<img src="img/banner/cover03.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+				<div class="swiper-slide" style="background-image: url(img/banner/bg01.png);">
+					<a href="#">
+						<img src="img/banner/cover01.png" data-title="圖片標題" data-desc="圖片說明">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li name="recommend" class="active">專屬推薦</li>
+			<li name="collect">數位收藏品</li>
+			<li name="game">電玩遊戲</li>
+			<li name="toys">玩具公仔</li>
+			<li name="blindBox">盲盒</li>
+		</ul>
+	</nav>
+
+	<!-- 專屬推薦 -->
+	<section id="recommend" class="tab__container active">
+		<!-- 熱門推薦 -->
+		<div class="card">
+			<h5>熱門推薦</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級182級</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 輪播廣告 -->
+		<div class="card adCarousel">
+			<div class="swiper adSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- 近期熱門 -->
+		<div class="card">
+			<h5>近期熱門</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 猜你喜歡 -->
+		<div class="card">
+			<h5>猜你喜歡</h5>
+			<div class="stack">
+				 <ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li class="ad">
+						<a href="#"><img src="img/ad.png" alt=""></a>
+					</li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+
+			<!-- Loading -->
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 數位收藏品 -->
+	<section id="collect" class="tab__container">
+		<!-- 買賣家中心 -->
+		<div class="card block">
+			<a href="#" class="tradeCenter">
+				<div class="tradeCenter--icon"><img src="img/tradeCenter.svg"></div>
+				<div class="tradeCenter--text">買賣家中心</div>
+				<div class="tradeCenter--arrow"><img src="img/arrowL.svg"></div>
+			</a>
+		</div>
+		<!-- 官方旗艦店 -->
+		<div class="card">
+			<h5>官方旗艦店</h5>
+			<div class="scroll scroll--brands">
+				<ul>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子小丸子小丸子小丸子小丸子小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand03.png"></div></a>
+						<span>月光雕刻師</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand04.png"></div></a>
+						<span>彈射世界</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 輪播廣告 -->
+		<div class="card adCarousel">
+			<div class="swiper adSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- 精選商品 -->
+		<div class="card">
+			<h5>精選商品</h5>
+			<button class="filter"><img src="img/filter.svg"></button>
+			<div class="none-pd">
+				<!-- 當未執行篩選動作又無商品顯示時，顯示文案 -->
+				<p>請選擇篩選條件</p>
+				<!-- 當執行篩選動作後無符合篩選商品顯示文案 -->
+				<p>目前尚無商品符合篩選條件</p>
+			</div>
+			<div class="stack">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li class="ad">
+						<a href="#"><img src="img/ad.png" alt=""></a>
+					</li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+			   </ul>
+		   </div>
+
+			<!-- Loading -->
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 電玩遊戲 -->
+	<section id="game" class="tab__container">
+		<!-- 熱門商品 -->
+		<div class="card">
+			<h5>熱門商品</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 輪播廣告 -->
+		<div class="card adCarousel">
+			<div class="swiper adSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- 熱門電玩IP -->
+		<div class="card">
+			<h5>熱門電玩IP</h5>
+			<div class="scroll scroll--brands">
+				<ul>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子小丸子小丸子小丸子小丸子小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand03.png"></div></a>
+						<span>月光雕刻師</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand04.png"></div></a>
+						<span>彈射世界</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 猜你喜歡 -->
+		<div class="card">
+			<h5>猜你喜歡</h5>
+			<div class="stack">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+						</a></li>
+						<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+						</a></li>
+						<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+						</a></li>
+						<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+						</a></li>
+						<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li class="ad">
+						<a href="#"><img src="img/ad.png" alt=""></a>
+					</li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+			   </ul>
+		   	</div>
+
+			<!-- Loading -->
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 玩具公仔 -->
+	<section id="toys" class="tab__container">
+		<!-- 本週主打 -->
+		<div class="card">
+			<h5>本週主打</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 輪播廣告 -->
+		<div class="card adCarousel">
+			<div class="swiper adSwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="img/adCarousel/ad01.png"></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- 熱門電玩IP -->
+		<div class="card">
+			<h5>熱門電玩IP</h5>
+			<div class="scroll scroll--brands">
+				<ul>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子小丸子小丸子小丸子小丸子小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand03.png"></div></a>
+						<span>月光雕刻師</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand04.png"></div></a>
+						<span>彈射世界</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand01.png"></div></a>
+						<span>小丸子</span>
+					</li>
+					<li>
+						<a href="#"><div><img src="img/brands/brand02.png"></div></a>
+						<span>便利商店</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 猜你喜歡 -->
+		<div class="card">
+			<h5>猜你喜歡</h5>
+			<div class="stack">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li class="ad">
+						<a href="#"><img src="img/ad.png" alt=""></a>
+					</li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+				</ul>
+		   </div>
+
+			<!-- Loading -->
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 盲盒 -->
+	<section id="blindBox" class="tab__container">
+		<!-- 熱銷盲盒 -->
+		<div class="card">
+			<h5>熱銷盲盒</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 盲盒許願社 -->
+		<div class="card block"><a href="#" class="wish">
+			<div class="wish--logo"><img src="img/wish.png"></div>
+			<div class="wish--text">
+				<span>有閑盲盒許願社</span>
+			</div>
+			<div class="wish--plus"><img src="img/plus.svg"></div>
+		</a></div>
+		<!-- 不抽直接買 -->
+		<div class="card">
+			<h5>不抽直接買</h5>
+			<div class="scroll scroll--items">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 精選商品 -->
+		<div class="card">
+			<h5>精選商品</h5>
+			<div class="stack">
+				<ul>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item05.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item03.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item04.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item01.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+								<span class="price original">$699</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+						</div>
+					</a></li>
+					<li class="ad">
+						<a href="#"><img src="img/ad.png" alt=""></a>
+					</li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+					<li><a href="#">
+						<div class="img">
+							<img src="img/items/item02.png" alt="">
+						</div>
+						<div class="info">
+							<div class="price-box">
+								<span class="price">$650</span>
+							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<div class="channel"><img src="img/funmarket.png">fun市集</div>
+						</div>
+					</a></li>
+			   </ul>
+		   </div>
+
+			<!-- Loading -->
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 公版 loading -->
+	<!-- <div v-show="!btnloading" class="btn-loading list-bottom" id="dot-loading" v-show="btnloading"></div> -->
+
+	<!-- 篩選器彈窗 (非必選) -->
+	<div class="filter__popUp" >
+		<div class="black-wall"></div>
+		<div class="filter__popUp--container"> 
+			<div class="group">
+				<p>上架時間</p>
+				<button class="active">最新</button>
+				<button>熱門</button>
+				<button>推薦</button>
+			</div>
+			<div class="group">
+				<p>分類</p>
+				<button>官方商品</button>
+				<button>會員拍賣</button>
+			</div>
+			<div class="group">
+				<p>價格</p>
+				<button>低到高</button>
+				<button>高到低</button>
+			</div>
+			<div class="confirm">
+				<button id="btn--reset">重置</button>
+				<button id="btn--confirm">確定</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Customer js -->
+	<script src="js/customer.js"></script>
+
+	<!-- Swiper 套件 -->
+	<script>
+		// Header 輪播 (最多7張)
+		var headerSwiper = new Swiper(".headerSwiper", {
+			effect: "coverflow",
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: "auto",
+			coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			loop: true,
+		});
+
+		// 廣告輪播 (最多5張)
+		var adSwiper = new Swiper(".adSwiper", {
+			pagination: {
+				el: ".swiper-pagination",
+			},
+			loop: true,
+		});
+
+	</script>
+</body>
+</html>

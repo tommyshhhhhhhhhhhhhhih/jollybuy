@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  color: #fff;
+  font-size: 1.15rem;
+  
+  display: flex;
+  flex-direction: column;
+  background: #f7401b;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.activeTab-indicator {
+  display: inline-block;
+  height: 2px;
+  width: 10px;
+  background-color: #fff;
+  transition: transform 0.4s ease-out;
+}
+
+.tabHeader-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6330b;
+}
+
+.tabContent-container {
+  display: flex;
+  transition: transform 0.4s ease-out;
+}
+
+.tabHeader {
+  cursor: pointer;
+  color: #fdcabf;
+  transition: color 0.4s ease;
+  padding: 15px 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tabContent {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background: #f7401b;
+}
+
+.tabContent h1 {
+  margin: 0;
+}
+
+.radioInput:nth-of-type(1):checked ~ .tabContent-container {
+  transform: translateX(0);
+}
+
+.radioInput:nth-of-type(1):checked ~ .tabHeader-container .tabHeader:nth-of-type(1) {
+  color: #fff;
+}
+
+.radioInput:nth-of-type(1):checked ~ .activeTab-indicator {
+  transform: translateX(0);
+}
+
+.radioInput:nth-of-type(2):checked ~ .tabContent-container {
+  transform: translateX(-100%);
+}
+
+.radioInput:nth-of-type(2):checked ~ .tabHeader-container .tabHeader:nth-of-type(2) {
+  color: #fff;
+}
+
+.radioInput:nth-of-type(2):checked ~ .activeTab-indicator {
+  transform: translateX(100%);
+}
+
+.radioInput:nth-of-type(3):checked ~ .tabContent-container {
+  transform: translateX(-200%);
+}
+
+.radioInput:nth-of-type(3):checked ~ .tabHeader-container .tabHeader:nth-of-type(3) {
+  color: #fff;
+}
+
+.radioInput:nth-of-type(3):checked ~ .activeTab-indicator {
+  transform: translateX(200%);
+}
+
+.radioInput:nth-of-type(4):checked ~ .tabContent-container {
+  transform: translateX(-300%);
+}
+
+.radioInput:nth-of-type(4):checked ~ .tabHeader-container .tabHeader:nth-of-type(3) {
+  color: #fff;
+}
+
+.radioInput:nth-of-type(5):checked ~ .activeTab-indicator {
+  transform: translateX(300%);
+}
+
+.radioInput:nth-of-type(5):checked ~ .tabContent-container {
+  transform: translateX(-400%);
+}
+
+.radioInput:nth-of-type(5):checked ~ .tabHeader-container .tabHeader:nth-of-type(3) {
+  color: #fff;
+}
+
+.radioInput:nth-of-type(5):checked ~ .activeTab-indicator {
+  transform: translateX(400%);
+}

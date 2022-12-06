@@ -1,0 +1,591 @@
+/* 字體設定 */
+h2 {
+	font-size: 1.5em;
+	color: $dark;
+}
+
+h5 {
+	font-size: 18px;
+	color: $dark;
+	font-weight: 500;
+	line-height: 21px;
+}
+
+/* 卡片樣式 */
+.card {
+	position: relative;
+	padding-top: 22px;
+	background-color: $white;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	h5 {
+		width: 90%;
+		margin: 0 auto 18px;
+	}
+}
+
+/* 廣告欄位 */
+.adCarousel {
+	padding: 22px 0 10px;
+
+	.adSwiper {
+		width: 100vw;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		
+		.swiper-slide {
+			padding: 0 5%;
+
+			img {
+				width: calc(100vw - 32px);
+				height: calc(50vw - 16px);
+				border-radius: 8px;
+			}
+		}
+
+		.swiper-pagination-bullet {
+			background-color: $dark;
+		}
+	}
+}
+
+/* 橫向捲軸 */
+.scroll {
+	width: 100vw;
+	overflow-y: hidden;
+	overflow-x: scroll;
+
+	ul {
+		width: 100%;
+		padding: 0 5%;
+		box-sizing: border-box;
+
+		li {
+			display: inline-block;
+			position: relative;
+			margin-right: 8px;
+			border-radius: 8px;
+		}
+	}
+
+	/* 商品卷軸 */
+	&--items {
+		padding-bottom: 22px;
+
+		ul {
+			display: flex;
+			width: max-content;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+
+			li {
+				width: 130px;
+				max-width: 130px;
+				margin-right: 8px;
+				border: 1px solid $border;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				.img{
+					overflow: hidden;
+					margin-bottom: 8px;
+					border-radius: 8px 8px 0 0;
+					position: relative;
+
+					&::before{
+						content: '';
+						display: block;
+						padding-top: 100%;
+					}
+
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
+						// object-fit: contain;
+						// background-size: cover;
+						// object-position: center;
+						// background-position: center;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+				.info{
+					box-sizing: border-box;
+					padding: 0 8px 10px;
+					
+					.price-box{
+						span.price {
+							color: $price;
+							margin-bottom: 8px;
+							font-size: 16px;
+							font-weight: 500;
+							line-height: 19px;
+							&.original{
+								margin-left: 4px;
+								font-size: 11px;
+								font-weight: 400;
+								line-height: 16px;
+								text-decoration: line-through;
+							}
+						}
+					}
+
+					.disc {
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+						overflow: hidden;
+						height: 44px;
+						margin: 8px 0;
+						color: $dark;
+						font-size: 15px;
+						line-height: 22px;
+						font-weight: 400;
+						// word-wrap: break-word;
+					}
+					
+					.channel {
+						display: flex;
+						align-items: center;
+						color: $gray;
+						font-size: 13px;
+						line-height: 16px;
+						font-weight: 400;
+						img {
+							width: 16px;
+							height: 16px;
+							border-radius: 50%;
+							margin-right: 4px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* 品牌捲軸 */
+	&--brands {
+		padding-bottom: 22px;
+
+		ul {
+			display: flex;
+			width: max-content;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: flex-start;
+
+			li {
+				max-width: 90px;
+				color: $dark;
+
+				&:last-child {
+					margin-right: 0;
+				}
+				a{
+					color: $dark;
+				}
+
+				div {
+					display: block;
+					width: 90px;
+					height: 90px;
+					overflow: hidden;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 8px;
+					box-shadow: 0 4px 12px rgba($dark, .07);
+					margin-bottom: 10px;
+					text-align: center;
+					position: relative;
+
+					&::before{
+						content: '';
+						display: block;
+						padding-top: 100%;
+					}
+
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+
+				span{
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+					text-align: center;
+					line-height: 20px;
+					color: $dark;
+				}
+			}
+		}
+	}
+}
+
+/* 堆疊選單 */
+.stack {
+	overflow: hidden;
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		padding: 0 5%;
+
+		li {
+			width: calc(50% - 4px);
+			max-width: calc(50% - 4px);
+			margin-bottom: 8px;
+			border-radius: 8px;
+			border: 1px solid $border;
+
+			&:nth-child( 9n + 1 ),&:nth-child( 9n + 3 ),&:nth-child( 9n + 5 ),&:nth-child( 9n + 7 ){
+				margin-right: 8px;
+			}
+			.img{
+				overflow: hidden;
+				margin-bottom: 8px;
+				border-radius: 8px 8px 0 0;
+				position: relative;
+
+				&::before{
+					content: '';
+					display: block;
+					padding-top: 100%;
+				}
+
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					// object-fit: contain;
+					// background-size: cover;
+					// object-position: center;
+					// background-position: center;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			.info{
+				box-sizing: border-box;
+				padding: 0 8px 10px;
+				
+				.price-box{
+					span.price {
+						color: $price;
+						margin-bottom: 8px;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 19px;
+						&.original{
+							margin-left: 4px;
+							font-size: 11px;
+							font-weight: 400;
+							line-height: 16px;
+							text-decoration: line-through;
+						}
+					}
+				}
+
+				.disc {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 2;
+					overflow: hidden;
+					height: 44px;
+					margin: 8px 0;
+					color: $dark;
+					font-size: 15px;
+					line-height: 22px;
+					font-weight: 400;
+					// word-wrap: break-word;
+				}
+				
+				.channel {
+					display: flex;
+					align-items: center;
+					color: $gray;
+					font-size: 13px;
+					line-height: 16px;
+					font-weight: 400;
+					img {
+						width: 16px;
+						height: 16px;
+						border-radius: 50%;
+						margin-right: 4px;
+					}
+				}
+			}
+
+			/* 廣告區塊 */
+			&.ad {
+				width: 100%;
+				max-width: 100%;
+				overflow: hidden;
+				position: relative;
+				&::before{
+					content: '';
+					display: block;
+					padding-top: 50%;
+				}
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+		}
+	}
+
+	// .ad{
+	// 	width: 90%;
+	// 	overflow: hidden;
+	// 	margin: 0 auto 8px;
+	// 	box-sizing: border-box;
+	// 	border-radius: 8px;
+	// 	position: relative;
+
+	// 	&::before{
+	// 		content: '';
+	// 		display: block;
+	// 		padding-top: 50%;
+	// 	}
+
+	// 	img{
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		object-fit: cover;
+	// 		position: absolute;
+	// 		top: 0;
+	// 		left: 0;
+	// 	}
+	// }
+}
+
+/* 無篩選條件之商品 */
+.none-pd{
+	padding: 30px 0 50px;
+	p{
+		font-size: 15px;
+		color: #666;
+		text-align: center;
+	}
+}
+
+/* 按鈕區塊 */
+.block {
+	padding: 22px 5%;
+	display: flex;
+	align-items: center;
+}
+
+/* 買賣家中心 */
+.tradeCenter {
+	padding: 16px 12px 16px 16px;
+	background-color: $border;
+	width: 100%;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	color: $dark;
+
+	&--icon {
+		// flex: 36px;
+		// width: 36px;
+		margin-right: 8px;
+		img{
+			display: block;
+			// width: 24px;
+		}
+	}
+
+	&--text {
+		// flex: calc(100% - 36px - 24px);
+		width: calc(100% - 36px - 24px);
+		// font-weight: 500;
+		text-align: left;
+	}
+
+	&--arrow {
+		width: 24px; 
+		height: 24px;
+		// margin-left: 12px;
+		background-color: $white;
+		border-radius: 50%;
+		box-shadow: 0 0 1px rgba($dark, .2);
+		img{
+			display: block;
+			// height: 14px;
+			margin: 5px auto 0;
+			transform: translateX(1px);
+		}
+	}
+}
+
+/* 盲盒許願社 */
+.wish {
+	display: flex;
+	width: 100%;
+	align-items: center;
+
+	&--logo {
+		width: 44px;
+		height: 44px;
+		overflow: hidden;
+		margin-right: 12px;
+		border-radius: 50%;
+
+		img {
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+
+	&--text {
+		width: calc(100% - 44px - 12px - 44px - 12px);
+
+		span {
+			display: block;
+			line-height: 1.5em;
+			font-size: .8em;
+			font-size: 16px;
+			color: $dark;
+			font-weight: 500;
+		}
+	}
+
+	&--plus {
+		width: 44px;
+		height: 44px;
+		margin-left: 12px;
+		border-radius: 50%;
+		border: 1px solid $border;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* 篩選器 */
+.filter {
+	position: absolute;
+	top: 22px;
+	right: 5%;
+	padding: 0;
+	img{
+		display: block;
+	}
+}
+
+.filter__popUp {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+
+	.black-wall{
+		width: 100%;
+		height: 100%;
+		background-color: rgba($dark, .3);
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	&--container {
+		position: fixed;
+		right: 0;
+		bottom: -385px;
+		left: 0;
+		background-color: $white;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding: 30px 5%;
+		transition: all 1s;
+
+		&.active{
+			bottom: 0;
+			animation: fade-in .5s linear;
+		}
+		@keyframes fade-in {
+			0% {
+				bottom: -385px;
+			}
+			100% {
+				bottom: 0;
+			}
+		}
+
+		.group {
+			display: block;
+			margin-bottom: 14px;
+
+			p{
+				font-size: 16px;
+				margin-bottom: 16px;
+			}
+
+			button {
+				display: inline-block;
+				font-size: 14px;
+				border: 1px solid #dddddd;
+				border-radius: 6px;
+				margin-bottom: 10px;
+				padding: 8px 20px;
+				text-align: center;
+				margin-right: 6px;
+				color: $gray;
+
+				&.active {
+					background-color: #2B3843;
+					border-color: #2B3843;
+					color: $white;
+				}
+			}
+		}
+
+		.confirm {
+			display: flex;
+
+			button {
+				padding: 10px;
+				border-radius: 6px;
+				font-size: 16px;
+
+				&#btn--reset {
+					flex: 1;
+					background-color: $white;
+					color: $gray;
+					margin-right: 10px;
+				}
+
+				&#btn--confirm {
+					flex: 3;
+					background-color: $primary;
+					color: $white;
+				}
+			}
+		}
+	}
+}
