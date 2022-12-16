@@ -58,6 +58,27 @@ $('#btn--confirm').click(function () {
 })
 
 
+
+//判斷商品圖是否橫式
+$(document).ready(function() {
+    $(".img img").each(function (index, item) {
+        var $img = $(item);
+        var width = $img.prop('naturalWidth');
+        var height = $img.prop('naturalHeight');
+
+        console.log(index, item, width, height)
+             
+        if ( height >  width) {
+            $img.addClass('vertical');
+        } else {
+            // $img.addClass('vertical');
+        }
+
+    });
+});
+
+
+
 // 公版 loading
 /*
 var jQfn = function (){

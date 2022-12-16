@@ -203,6 +203,20 @@ h5 {
   border: 1px solid #F3F6F8;
 }
 
+.scroll--items ul li.unsupport-bfcoin .info .disc {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 9px;
+  -webkit-line-clamp: 3;
+}
+
+.scroll--items ul li.unsupport-bfcoin .info .other .view {
+  font-size: 13px;
+  color: #F57902;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
 .scroll--items ul li:last-child {
   margin-right: 0;
 }
@@ -223,11 +237,17 @@ h5 {
 .scroll--items ul li .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.scroll--items ul li .img img.vertical {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .scroll--items ul li .info {
@@ -265,7 +285,19 @@ h5 {
   font-weight: 400;
 }
 
-.scroll--items ul li .info .channel {
+.scroll--items ul li .info .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.scroll--items ul li .info .other .channel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,7 +310,7 @@ h5 {
   font-weight: 400;
 }
 
-.scroll--items ul li .info .channel img {
+.scroll--items ul li .info .other .channel img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -371,6 +403,7 @@ h5 {
 /* 堆疊選單 */
 .stack {
   overflow: hidden;
+  /* 廣告區塊 */
 }
 
 .stack ul {
@@ -395,11 +428,28 @@ h5 {
   margin-bottom: 8px;
   border-radius: 8px;
   border: 1px solid #F3F6F8;
-  /* 廣告區塊 */
+  /* 廣告區塊 同 ul li用 */
 }
 
-.stack ul li:nth-child(9n + 1), .stack ul li:nth-child(9n + 3), .stack ul li:nth-child(9n + 5), .stack ul li:nth-child(9n + 7) {
+.stack ul li.unsupport-bfcoin .info .disc {
+  margin-bottom: 9px;
+  height: 70px;
+  -webkit-line-clamp: 3;
+}
+
+.stack ul li.unsupport-bfcoin .info .other .view {
+  font-size: 13px;
+  color: #F57902;
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+}
+
+.stack ul li:nth-child(odd) {
   margin-right: 8px;
+}
+
+.stack ul li:nth-child(even) {
+  margin-right: 0;
 }
 
 .stack ul li .img {
@@ -418,11 +468,17 @@ h5 {
 .stack ul li .img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.stack ul li .img img.vertical {
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .stack ul li .info {
@@ -460,7 +516,19 @@ h5 {
   font-weight: 400;
 }
 
-.stack ul li .info .channel {
+.stack ul li .info .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stack ul li .info .other .channel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,27 +541,30 @@ h5 {
   font-weight: 400;
 }
 
-.stack ul li .info .channel img {
+.stack ul li .info .other .channel img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
   margin-right: 4px;
 }
 
-.stack ul li.ad {
-  width: 100%;
-  max-width: 100%;
+.stack .ad {
+  width: 90%;
   overflow: hidden;
+  margin: 0 auto 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
   position: relative;
 }
 
-.stack ul li.ad::before {
+.stack .ad::before {
   content: '';
   display: block;
   padding-top: 50%;
 }
 
-.stack ul li.ad img {
+.stack .ad img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -754,7 +825,7 @@ body {
 /* header */
 header {
   background-color: #ffffff;
-  background-image: url(../img/headerBG.svg);
+  background-image: url(../img/headerBg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom 30px center;
