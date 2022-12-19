@@ -102,6 +102,7 @@ h5 {
 							.view{
 								font-size: 13px;
 								color: $price;
+								line-height: 16px;
 								transform: translateX(6px);
 							}
 						}
@@ -175,21 +176,6 @@ h5 {
 						line-height: 22px;
 						font-weight: 400;
 						// word-wrap: break-word;
-					}
-
-					.channel {
-						display: flex;
-						align-items: center;
-						color: $gray;
-						font-size: 13px;
-						line-height: 16px;
-						font-weight: 400;
-						img {
-							width: 16px;
-							height: 16px;
-							border-radius: 50%;
-							margin-right: 4px;
-						}
 					}
 
 					.other{
@@ -311,6 +297,7 @@ h5 {
 						.view{
 							font-size: 13px;
 							color: $price;
+							line-height: 16px;
 							transform: translateX(6px);
 						}
 					}

@@ -66,7 +66,7 @@ $(document).ready(function() {
         var width = $img.prop('naturalWidth');
         var height = $img.prop('naturalHeight');
 
-        console.log(index, item, width, height)
+        // console.log(index, item, width, height)
              
         if ( height >  width) {
             $img.addClass('vertical');

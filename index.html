@@ -6,12 +6,16 @@
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/tabs.css">
+	<!-- <link rel="stylesheet" href="css/tabs.css"> -->
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- Swiper 套件 -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script  src="js/script.js"></script>
 	<title>市集</title>
 </head>
 <body>
@@ -63,17 +67,17 @@
 	</header>
 
 	<nav>
-		<ul>
-			<li name="recommend" class="active">專屬推薦</li>
-			<li name="collect">數位收藏品</li>
-			<li name="game">電玩遊戲</li>
-			<li name="toys">玩具公仔</li>
-			<li name="blindBox">盲盒</li>
+		<ul id="tabs-swipe-demo" class="tabs">
+			<li class="tab"><a href="#recommend">專屬推薦</a></li>
+			<li class="tab"><a href="#collect">收藏品</a></li>
+			<li class="tab"><a href="#game">電玩遊戲</a></li>
+			<li class="tab"><a href="#toys">玩具公仔</a></li>
+			<li class="tab"><a href="#blindBox">盲盒</a></li>
 		</ul>
 	</nav>
 
 	<!-- 專屬推薦 -->
-	<section id="recommend" class="tab__container active">
+	<section id="recommend" class="tab__container">
 		<!-- 熱門推薦 -->
 		<div class="card">
 			<h5>熱門推薦</h5>
@@ -84,12 +88,14 @@
 							<img src="img/items/item04.png" alt="">
 						</div>
 						<div class="info">
-							<p class="disc">傳奇史詩寵物</p>
-							<div class="price-box" style="margin-bottom: 10px;">
+							<div class="price-box">
 								<span class="price">$650</span>
 								<span class="price original">$699</span>
 							</div>
-							<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+							<p class="disc">傳奇史詩寵物</p>
+							<div class="other">
+								<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
+							</div>
 						</div>
 					</a></li>
 					<!-- B2C商品不支援 bf!Coin 樣式 -->
@@ -101,7 +107,7 @@
 							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級182級傳奇史詩寵物 潔白雪花豹 182級182級</p>
 							<div class="other">
 								<div class="channel"><img src="img/funmarket.png">fun市集</div>
-								<div class="view">查看 》</div>
+								<div class="view">更多 》</div>
 							</div>
 						</div>
 					</a></li>
@@ -218,7 +224,7 @@
 							<p class="disc">傳奇史詩寵物 潔白雪花豹 182級</p>
 							<div class="other">
 								<div class="channel"><img src="img/funmarket.png">fun市集</div>
-								<div class="view">查看 》</div>
+								<div class="view">更多 》</div>
 							</div>
 						</div>
 					</a></li>
@@ -253,7 +259,7 @@
 							<p class="disc">傳奇史詩寵物傳奇史詩寵物傳奇史詩寵物傳奇史詩寵物傳奇史詩寵物傳奇史詩寵物</p>
 							<div class="other">
 								<div class="channel"><img src="img/funmarket.png">fun市集</div>
-								<div class="view">查看優惠 》</div>
+								<div class="view">更多優惠 》</div>
 							</div>
 						</div>
 					</a></li>
@@ -262,11 +268,11 @@
 							<img src="img/items/item02.png" alt="">
 						</div>
 						<div class="info">
-							<p class="disc">傳奇史詩寵物 潔白雪花豹</p>
-							<div class="price-box" style="margin-bottom:10px;">
+							<div class="price-box">
 								<span class="price">$650</span>
 								<span class="price original">$699</span>
 							</div>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹</p>
 							<div class="other">
 								<div class="channel"><img src="img/jollybuy.png">有閑購物</div>
 							</div>
@@ -322,10 +328,10 @@
 							<img src="img/items/item04.png" alt="">
 						</div>
 						<div class="info">
-							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物 潔白雪花豹 111</p>
+							<p class="disc">傳奇史詩寵物 潔白雪花豹 111傳奇史詩寵物</p>
 							<div class="other">
 								<div class="channel"><img src="img/funmarket.png">fun市集</div>
-								<div class="view">查看優惠 》</div>
+								<div class="view">更多優惠 》</div>
 							</div>
 						</div>
 					</a></li>
@@ -407,7 +413,7 @@
 		</div>
 	</section>
 
-	<!-- 數位收藏品 -->
+	<!-- 收藏品 -->
 	<section id="collect" class="tab__container">
 		<!-- 買賣家中心 -->
 		<div class="card block">
