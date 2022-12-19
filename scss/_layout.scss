@@ -1,6 +1,5 @@
 /* body */
 body {
-	background-color: #F3F6F8;
 	touch-action: manipulation; //禁止double-tap手勢
 }
 
@@ -132,9 +131,6 @@ ul.tabs{
 	}
 }
 
-
-
-
 .carousel {
 	overflow:hidden;
 	position:relative;
@@ -145,7 +141,7 @@ ul.tabs{
 	transform-style:preserve-3d;
 	-webkit-transform-origin:0% 50%;
 	transform-origin:0% 50%;
-
+	background-color: #F3F6F8;
 
 	&.carousel-slider{
 		// top: 0;
@@ -158,19 +154,6 @@ ul.tabs{
 			left: 0;
 			visibility: hidden;
 		}
-	}
-}
-
-
-
-
-
-
-.tab__container {
-	display: none;
-
-	&.active {
-		display: inline;
 	}
 }
 

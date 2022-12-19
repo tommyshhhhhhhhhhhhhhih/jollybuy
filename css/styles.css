@@ -589,7 +589,7 @@ h5 {
 
 /* 按鈕區塊 */
 .block {
-  padding: 22px 5%;
+  padding: 18.8px 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +819,6 @@ h5 {
 
 /* body */
 body {
-  background-color: #F3F6F8;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
@@ -969,6 +968,7 @@ ul.tabs .indicator {
   transform-style: preserve-3d;
   -webkit-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
+  background-color: #F3F6F8;
 }
 
 .carousel.carousel-slider .carousel-item {
@@ -978,14 +978,6 @@ ul.tabs .indicator {
   top: 0;
   left: 0;
   visibility: hidden;
-}
-
-.tab__container {
-  display: none;
-}
-
-.tab__container.active {
-  display: inline;
 }
 
 /* loading */

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('ul.tabs').tabs({
+  $('.tabs').tabs({
     swipeable : true,
     duration: 300,
     responsiveThreshold : 1920
@@ -17,16 +17,18 @@ $(document).ready(function(){
   });
 
   //每秒抓取當ID內容高度
+  function hello(){
+    var h = $('.tab__container.active').height()
+    $('.tabs-content').css('height', h);
+  }
+
   var t1 = window.setInterval(hello,500)
   window.setInterval(t1)
-  
+
 });
 
 
-function hello(){
-  var h = $('.tab__container.active').height()
-  $('.tabs-content').css('height', h);
-}
+
 
 
 
