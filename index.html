@@ -13,12 +13,14 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-
-
-	
-	<!-- <link rel="stylesheet" href="css/materialize.css"> -->
+	<!-- tabs scroll 切換 -->
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
 	<script  src="js/script.js"></script>
+	<script>
+		function myFunction() {
+			alert();
+		};
+	</script>
 	<title>市集</title>
 </head>
 <body>
@@ -82,7 +84,7 @@
 	<!-- 專屬推薦 -->
 	<section id="recommend" class="tab__container">
 		<!-- 熱門推薦 -->
-		<div class="card">
+		<div class="card" ontouchstart="myFunction()">
 			<h5>熱門推薦</h5>
 			<div class="scroll scroll--items">
 				<ul>
