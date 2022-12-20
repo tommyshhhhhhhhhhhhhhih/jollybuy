@@ -10,7 +10,7 @@ $(document).ready(function(){
     var href = $(this).attr('href')
     var height = $(href).height()
 
-    console.log(height);
+    // console.log(height);
 
     $('.tabs-content').css('height', height);
 
@@ -23,7 +23,12 @@ $(document).ready(function(){
   }
 
   var t1 = window.setInterval(hello,500)
-  window.setInterval(t1)
+  window.setInterval(t1);
+
+  $('.scroll').click(function(){
+    $('.tab__container').css('transform' , 'translateX(0px)')
+  });
+
 
 });
 
