@@ -819,6 +819,7 @@ h5 {
 
 /* body */
 body {
+  background-color: #F3F6F8;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }

@@ -1,8 +1,8 @@
 $(document).ready(function(){
   $('.tabs').tabs({
-    swipeable : true,
-    duration: 300,
-    responsiveThreshold : 1920,
+    // swipeable : false,
+    // duration: 300,
+    // responsiveThreshold : 1920,
   });
 
   //抓取當ID內容高度
