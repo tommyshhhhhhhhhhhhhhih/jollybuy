@@ -2,8 +2,14 @@ $(document).ready(function(){
   $('.tabs').tabs({
     swipeable : true,
     duration: 300,
-    responsiveThreshold : 1920
+    responsiveThreshold : 1920,
   });
+
+  // if(Touch.apply()){
+
+  // }else{
+
+  // }
 
   //抓取當ID內容高度
   $('#tabs-swipe-demo li a').click(function(){
