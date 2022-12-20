@@ -22,6 +22,11 @@
 				swipeable : false,
 			});
 		};
+		function myFunction2() {
+			$('.tabs').tabs({
+				swipeable : true,
+			});
+		};
 	</script>
 	<title>市集</title>
 </head>
@@ -86,10 +91,10 @@
 	<!-- 專屬推薦 -->
 	<section id="recommend" class="tab__container">
 		<!-- 熱門推薦 -->
-		<div class="card" ontouchstart="myFunction()">
+		<div class="card">
 			<h5>熱門推薦</h5>
 			<div class="scroll scroll--items">
-				<ul>
+				<ul ontouchstart="myFunction()" ontouchend="myFunction2()">
 					<li><a href="#">
 						<div class="img">
 							<img src="img/items/item04.png" alt="">
