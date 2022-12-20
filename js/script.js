@@ -26,7 +26,7 @@ $(document).ready(function(){
   window.setInterval(t1);
 
   $('.scroll').click(function(){
-    $('.tab__container').css('transform' , 'translateX(0px)')
+    $('.tab__container').css('transform' , 'translateX(0px) !important')
   });
 
 
