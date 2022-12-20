@@ -5,12 +5,6 @@ $(document).ready(function(){
     responsiveThreshold : 1920,
   });
 
-  // if(Touch.apply()){
-
-  // }else{
-
-  // }
-
   //抓取當ID內容高度
   $('#tabs-swipe-demo li a').click(function(){
     var href = $(this).attr('href')

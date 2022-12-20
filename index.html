@@ -17,22 +17,114 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
 	<script  src="js/script.js"></script>
 	<script>
-		function myFunction() {
-			$('.tabs').tabs({
-				swipeable : false,
-			});
-		};
-		function myFunction2() {
-			alert(222);
 
-			function aaa(){
-				alert(222);
-				// $('.tabs').tabs({
-				// 	swipeable : true,
-				// });
-			};
-			window.setInterval(aaa,500);
+		window.onload = function(){
+			
+			var aa = $('.scroll')
+
+			document.querySelector('body').addEventListener('touchstart', function(ev){
+				this.addEventListener('touchstart', function(ev){
+					$('.tabs').tabs({
+						swipeable : true,
+					});
+				}, true)
+			})
+
+			aa.each(function(index, item){
+				console.log(index, item)
+
+				this.addEventListener('touchstart', function(ev){
+					$('.tabs').tabs({
+						swipeable : false,
+					});
+				}, true)
+
+				// this.addEventListener('touchend', function(ev){
+				// 	$('.tabs').tabs({
+				// 		swipeable : true,
+				// 	});
+				// }, true)
+			});
+
+			// var bb = document.body
+
+			// document.querySelector('body').addEventListener('touchstart', function(ev){
+
+			// 	var aa = $('.scroll').children()
+
+			// 	console.log(aa)
+
+			// 	console.log(ev.target)
+
+
+			// 	if(ev.target === aa){
+			// 		console.log(111)
+
+			// 		// $('.tabs').tabs({
+			// 		// 	swipeable : false,
+			// 		// });
+			// 	}else{
+			// 		console.log(222)
+			// 	}
+
+			// }, true)
+
+
+
+			// window.addEventListener('touchstart', function(ev){
+			// 	$('.tabs').tabs({
+			// 		swipeable : false,
+			// 	});
+			// }, true)
+
+
+
+
+
+
+			// aa.addEventListener('touchstart', function(ev){
+			// 	$('.tabs').tabs({
+			// 		swipeable : false,
+			// 	});
+			// }, true)
+
+
+
+
+
+			// var obox = document.getElementsByClassName('scroll')[0]
+			// var obox1 = document.getElementsByClassName('scroll')[1]
+
+			// obox.addEventListener('touchstart', function(ev){
+			// 	$('.tabs').tabs({
+			// 		swipeable : false,
+			// 	});
+			// }, false)
+			// obox1.addEventListener('touchstart', function(ev){
+			// 	$('.tabs').tabs({
+			// 		swipeable : false,
+			// 	});
+			// }, false)
+
+
+			// $('document').addEventListener('touchstart', function(ev){
+
+			// 	$('.tabs').tabs({
+			// 		swipeable : true,
+			// 	});
+			// }, true)
+
+
 		}
+
+
+
+
+		// function myFunction() {
+		// 	$('.tabs').tabs({
+		// 		swipeable : false,
+		// 	});
+		// };
 
 	</script>
 	<title>市集</title>
@@ -98,7 +190,7 @@
 	<!-- 專屬推薦 -->
 	<section id="recommend" class="tab__container">
 		<!-- 熱門推薦 -->
-		<div class="card" touchstart="myFunction()" touchend="myFunction2()">
+		<div class="card">
 			<h5>熱門推薦</h5>
 			<div class="scroll scroll--items">
 				<ul>
